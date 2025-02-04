@@ -1,0 +1,15 @@
+[Unit]
+Description=Go Restapi
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/apps/go_restapi
+ExecStart=/root/apps/go_restapi/go_restapi
+Restart=always
+RestartSec=4
+StandardOutput=inherit
+EnvironmentFile=/root/apps/go_restapi/config.env
+
+[Install]
+WantedBy=multi-user.target
