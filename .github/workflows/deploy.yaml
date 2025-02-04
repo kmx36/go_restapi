@@ -11,7 +11,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      HOST: root@
+      HOST: localhost:8080
       DEPLOY_DIRECTORY: /root/apps/go_restapi
       CONFIG_PATH: /root/apps/go_restapi/config/prod.yaml
       ENV_FILE_PATH: /root/apps/go_restapi/config.env
