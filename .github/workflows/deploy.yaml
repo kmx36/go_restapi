@@ -35,7 +35,7 @@ jobs:
       - name: Build app
         run: |
           go mod download
-          go build -o go_restapi ./cmd/go_restapi
+          go build -o go_restapi ./cmd/url-shortener
       - name: Deploy to VM
         run: |
           sudo apt-get install -y ssh rsync
